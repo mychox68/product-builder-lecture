@@ -19,6 +19,7 @@
     if (savedTheme) {
       html.setAttribute('data-theme', savedTheme);
     }
+    
 
     themeToggle.addEventListener('click', () => {
       const currentTheme = html.getAttribute('data-theme');
@@ -31,6 +32,19 @@
       }
     });
   </script>
+
+  <section style="margin-top: 50px; padding: 20px; border-top: 1px solid #eee;">
+    <h2>제휴 문의</h2>
+    <form action="https://formspree.io/f/mwvvwpdl" method="POST">
+      <label for="name">이름:</label><br>
+      <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+      <label for="email">이메일:</label><br>
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-bottom: 10px;"><br>
+      <label for="message">메시지:</label><br>
+      <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 8px; margin-bottom: 10px;"></textarea><br>
+      <button type="submit" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer;">보내기</button>
+    </form>
+  </section>
 </body>
 </html>
 qnwkd
